@@ -1,0 +1,46 @@
+{
+    "name": "omnilab/brightsky",
+    "type": "library",
+    "description": "Omnilab Bright Sky: the Deutscher Wetterdienst's open data through Bright Sky - hourly weather at a point or a DWD or WMO station, the observations back to 2010 joined to the MOSMIX forecasts (temperature, dew point, humidity, precipitation and its probability, pressure, wind and gusts, cloud cover, visibility, sunshine, solar irradiation), or days made from the hours; a station as an entity; no key needed.",
+    "keywords": [
+        "science",
+        "earth-sciences",
+        "weather",
+        "meteorology",
+        "dwd",
+        "bright-sky",
+        "mosmix",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\BrightSky\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\BrightSky\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
