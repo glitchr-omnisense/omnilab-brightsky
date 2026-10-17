@@ -1,6 +1,6 @@
 # omnilab/brightsky
 
-The Deutscher Wetterdienst's open data for [glitchr/omnilab](https://github.com/glitchr-studio/omnilab),
+The Deutscher Wetterdienst's open data for [omniscient/omnilab](https://github.com/glitchr-studio/omnilab),
 through [Bright Sky](https://brightsky.dev): hourly weather at a point or at a DWD or WMO station -
 the observations back to 2010 (the stations' records, today's reports) joined to the MOSMIX
 forecasts ten days ahead: temperature, dew point, humidity, precipitation and its probability,
