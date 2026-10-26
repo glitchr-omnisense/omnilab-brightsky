@@ -1,6 +1,6 @@
 # omnilab/brightsky
 
-The Deutscher Wetterdienst's open data for [omniscient/omnilab](https://github.com/glitchr-studio/omnilab),
+The Deutscher Wetterdienst's open data for [omnisense/omnilab](https://github.com/glitchr-omnisense/omnilab),
 through [Bright Sky](https://brightsky.dev): hourly weather at a point or at a DWD or WMO station -
 the observations back to 2010 (the stations' records, today's reports) joined to the MOSMIX
 forecasts ten days ahead: temperature, dew point, humidity, precipitation and its probability,
@@ -31,8 +31,8 @@ omnilab:
                 base_uri: 'https://api.brightsky.dev/' # or a self-hosted instance
 ```
 
-The same weather for anywhere, from models, is [omnilab/open-meteo](https://github.com/glitchr-studio/omnilab-open-meteo);
-NOAA's station records of the world, [omnilab/noaa](https://github.com/glitchr-studio/omnilab-noaa).
+The same weather for anywhere, from models, is [omnilab/open-meteo](https://github.com/glitchr-omnisense/omnilab-open-meteo);
+NOAA's station records of the world, [omnilab/noaa](https://github.com/glitchr-omnisense/omnilab-noaa).
 
 See [docs/](docs/index.md) for what is read, how it maps, and what the API does not give here.
 
