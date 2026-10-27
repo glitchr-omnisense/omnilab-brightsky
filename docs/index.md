@@ -48,7 +48,7 @@ The factory's options, with the defaults it applies (`BrightSkySourceFactory`):
 |---|---|---|
 | `entity` | yes | a station: `dwd:01420`, `dwd.station:`, a WMO index (`wmo:10637`) or its WIGOS id; one call (`sources`); another scheme refused before any call |
 | `search` | no |  |
-| `series` | yes | the fifteen variables of [Calls](#calls) at a `Point` or a station, hourly or days made from the hours with an aggregation; one call for every variable; an unknown station, or a station without records, answers an empty list (no series) |
+| `series` | yes | the fourteen variables of [Calls](#calls) at a `Point` or a station, hourly or days made from the hours with an aggregation; one call for every variable; an unknown station, or a station without records, answers an empty list (no series) |
 | `products` | no |  |
 | `occurrences` | no |  |
 | `datasets` | no |  |
