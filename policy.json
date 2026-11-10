@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "brightsky",
+    "rateLimits": null,
+    "concurrency": null,
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "allowed",
+            "maxTtl": null
+        },
+        "storage": "allowed",
+        "redistribution": "allowed",
+        "attribution": {
+            "required": true,
+            "text": "Source: Deutscher Wetterdienst",
+            "url": "https://www.dwd.de/",
+            "where": [
+                "source"
+            ]
+        },
+        "licence": "CC-BY-4.0"
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://www.dwd.de/EN/service/legal_notice/legal_notice.html",
+        "policy": "https://brightsky.dev/",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": "https://github.com/jdemaeyer/brightsky",
+        "notes": "brightsky.dev read 2026-11-10: 'free-to-use for all purposes', 'No API key required', and 'the DWD's Terms of Use apply to all data you retrieve through the API'; no rate limit or fair-use figure published (README of github.com/jdemaeyer/brightsky neither); heavy users can self-host. DWD legal notice read 2026-11-10: re-use permitted under CC BY 4.0 'providing the source is duly acknowledged' (wording per the DWD's acknowledgement templates, not read); commercial use follows from CC BY 4.0. The /docs/ page is JavaScript-rendered and could not be read as text."
+    }
+}
