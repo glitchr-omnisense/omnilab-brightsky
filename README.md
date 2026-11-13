@@ -36,6 +36,34 @@ NOAA's station records of the world, [omnilab/noaa](https://github.com/glitchr-o
 
 See [docs/](docs/index.md) for what is read, how it maps, and what the API does not give here.
 
+## Install and a first call
+
+```sh
+composer require omnilab/brightsky
+```
+
+A real call, with no account and no key: the DWD station of Frankfurt/Main, read through Bright Sky.
+`mailto` is your address, sent in the User-Agent so that the service can reach you before it blocks
+a caller; the source keeps to the limits its [`policy.json`](policy.json) declares.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\BrightSky\BrightSkySourceFactory;
+
+$sky = (new BrightSkySourceFactory())->create(['mailto' => 'you@example.org']);   // your address, in the User-Agent
+$station = $sky->entity('dwd:01420');
+echo $station->label, ' ', $station->place, "\n";
+```
+
+Its output on 2026-11-13:
+
+```
+Frankfurt/Main 50.0259,8.5213
+```
+
 ## Terms of use
 
 The data are the Deutscher Wetterdienst's, re-usable under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
